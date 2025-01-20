@@ -10,7 +10,7 @@ Here’s an overview of the files in this repository:
 
 - `index.html`: The homepage of the website, introducing who I am.
 - `about.html`: A page describing my academic background, interests, and experiences.
-- `projects.html`: Highlights of my research projects and professional experience.
+- `projects.html`: Highlights of my research projects and professional experience, including ongoing collaborations.
 - `contact.html`: A page with my contact information.
 - `style.css`: The stylesheet for the website, defining its layout and appearance.
 - `images/`: A folder containing images used in the site (e.g., my profile photo).
@@ -18,12 +18,24 @@ Here’s an overview of the files in this repository:
 ## About Me
 I am a senior at the University of Pennsylvania, majoring in Chemical and Biomolecular Engineering with a concentration in Pharmaceutics and Biotechnology. My passions include tissue engineering, 3D bioprinting, and Lindy Hop dancing.
 
-Contact
+## Ongoing Collaborations
+### CBE 3300B Projects
+As part of the course **CBE 3300B**, I will be working on projects in collaboration with:
+- **Kayla Powell**
+- **Theertha [Last Name or Initial, if available]**
 
-For inquiries, feel free to reach out:
+Our focus will be on advanced topics in chemical and biomolecular engineering, with hands-on experimentation and design applications.
 
-Email: bpaulina@seas.upenn.edu
-LinkedIn: Paulina Bargallo
+### Senior Project Design
+For my **Senior Project Design**, I will collaborate with:
+- **Alan Han**
+- **Liang Dong**
 
+This project involves tackling a real-world engineering challenge, requiring innovative thinking, teamwork, and technical expertise. Our work will integrate principles of chemical engineering and biomolecular research to solve a significant problem in the field.
 
+## Editing and Contributing
+If you'd like to suggest improvements to the website:
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/bpaulina25/Paulina-Bargallo.git
 
