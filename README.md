@@ -25,17 +25,5 @@ For inquiries, feel free to reach out:
 Email: bpaulina@seas.upenn.edu
 LinkedIn: Paulina Bargallo
 
-### Optional Additions
-- **Screenshots**: Add images or screenshots of your website to make the README visually appealing.
-- **Acknowledgments**: Mention tools or templates you used (e.g., HTML, CSS, or inspiration from Academic Pages).
-
-By keeping your README well-organized and informative, it will help others understand the purpose of your repository and navigate it easily. Let me know if you'd like further suggestions or a walkthrough!
-
-
-## Editing and Contributing
-If you'd like to suggest improvements to the website:
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/bpaulina25/Paulina-Bargallo.git
 
 
