@@ -14,6 +14,20 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+    
+    <header class="text-center py-5 bg-dark text-light">
+    <img src="images/profile.jpg" alt="Paulina Bargallo" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+    <h1>Paulina Bargallo</h1>
+    <p>Chemical and Biomolecular Engineering | Lindy Hop Dancer | Tissue Engineering Enthusiast</p>
+    <nav>
+        <a href="#about" class="btn btn-outline-light m-2">About</a>
+        <a href="#skills" class="btn btn-outline-light m-2">Skills</a>
+        <a href="#projects" class="btn btn-outline-light m-2">Projects</a>
+        <a href="#experience" class="btn btn-outline-light m-2">Experience</a>
+        <a href="#contact" class="btn btn-outline-light m-2">Contact</a>
+    </nav>
+</header>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -47,46 +61,164 @@
         </p>
     </section>
 
-    <!-- Projects Section -->
     <section id="projects" class="container py-5">
     <h2>Projects</h2>
     <ul class="nav nav-tabs" id="projectTabs" role="tablist">
-        <!-- Tab 1 -->
+        <!-- Tab 1: CBE 3300B -->
         <li class="nav-item" role="presentation">
             <button class="nav-link active" id="project1-tab" data-bs-toggle="tab" data-bs-target="#project1" type="button" role="tab" aria-controls="project1" aria-selected="true">
                 CBE 3300B Projects
             </button>
         </li>
-        <!-- Tab 2 -->
+        <!-- Tab 2: MEAM101 -->
         <li class="nav-item" role="presentation">
-            <button class="nav-link" id="project2-tab" data-bs-toggle="tab" data-bs-target="#project2" type="button" role="tab" aria-controls="project2" aria-selected="false">
-                Senior Project Design
+            <button class="nav-link" id="meam101-tab" data-bs-toggle="tab" data-bs-target="#meam101" type="button" role="tab" aria-controls="meam101" aria-selected="false">
+                MEAM101 Projects
+            </button>
+        </li>
+        <!-- Tab 3: Contributors -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contributors-tab" data-bs-toggle="tab" data-bs-target="#contributors" type="button" role="tab" aria-controls="contributors" aria-selected="false">
+                Contributors
             </button>
         </li>
     </ul>
     <div class="tab-content" id="projectTabsContent">
-        <!-- Content for Tab 1 -->
+        <!-- Content for CBE 3300B Projects -->
         <div class="tab-pane fade show active" id="project1" role="tabpanel" aria-labelledby="project1-tab">
             <h3>CBE 3300B Projects</h3>
             <p>Details about CBE 3300B projects will go here.</p>
         </div>
-        <!-- Content for Tab 2 -->
-        <div class="tab-pane fade" id="project2" role="tabpanel" aria-labelledby="project2-tab">
-            <h3>Senior Project Design</h3>
-            <p>Details about Senior Project Design will go here.</p>
+        <!-- Content for MEAM101 Projects -->
+        <div class="tab-pane fade" id="meam101" role="tabpanel" aria-labelledby="meam101-tab">
+            <h3>MEAM101 Projects</h3>
+            <p>Details about MEAM101 projects will go here.</p>
+        </div>
+        <!-- Content for Contributors -->
+        <div class="tab-pane fade" id="contributors" role="tabpanel" aria-labelledby="contributors-tab">
+            <h3>Contributors</h3>
+            <ul>
+                <li>Kayla Powell</li>
+                <li>Theertha</li>
+                <li>Alan Han</li>
+                <li>Liang Dong</li>
+            </ul>
         </div>
     </div>
 </section>
 
 
-    <!-- Experience Section -->
-    <section id="experience" class="container py-5">
+<!-- Experience Section -->
+<section id="experience" class="bg-light py-5">
+    <div class="container">
         <h2>Experience</h2>
         <ul>
-            <li><strong>Hast Lab:</strong> Scaffold development for critical defect repairs.</li>
-            <li><strong>Lim Lab:</strong> Gene regulation studies in Drosophila Melanogaster.</li>
+            <li>
+                <strong>Hast Lab - Research Assistant</strong>  
+                <em>McKay Orthopaedic Research Laboratory, University of Pennsylvania</em>  
+                <p>
+                    Collaborated with a team to develop 3D-printed scaffolds for critical-sized defect repairs. Worked on experimental setup, data analysis, and optimization of scaffold designs for orthopedic applications under the supervision of Dr. Michael Hast.
+                </p>
+            </li>
+            <li>
+                <strong>Lim Lab - Research Intern</strong>  
+                <em>University of Pennsylvania</em>  
+                <p>
+                    Conducted molecular biology research focusing on gene regulation in <em>Drosophila melanogaster</em>. Designed and executed experiments involving PCR, gel electrophoresis, and imaging techniques to study gene expression patterns.
+                </p>
+            </li>
+            <li>
+                <strong>Nanopharmacia Diagnostica Oncology Genomics Lab - Intern</strong>  
+                <em>Mexico City</em>  
+                <p>
+                    Rotated through oncogenomics, hemato-oncogenomics, and pathology labs. Conducted DNA and RNA extraction, PCR, and white blood cell counts while learning laboratory protocols and logistics for oncological diagnostics.
+                </p>
+            </li>
         </ul>
-    </section>
+    </div>
+</section>
+
+    <!-- Dance Section -->
+<section id="dance" class="container py-5">
+    <h2>Dance</h2>
+    <ul class="nav nav-tabs" id="danceTabs" role="tablist">
+        <!-- West Coast Swing Tab -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="west-coast-tab" data-bs-toggle="tab" data-bs-target="#west-coast" type="button" role="tab" aria-controls="west-coast" aria-selected="true">
+                West Coast Swing
+            </button>
+        </li>
+        <!-- Lindy Hop Tab -->
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="lindy-hop-tab" data-bs-toggle="tab" data-bs-target="#lindy-hop" type="button" role="tab" aria-controls="lindy-hop" aria-selected="false">
+                Lindy Hop
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content" id="danceTabsContent">
+        <!-- West Coast Swing Content -->
+        <div class="tab-pane fade show active" id="west-coast" role="tabpanel" aria-labelledby="west-coast-tab">
+            <h3>West Coast Swing</h3>
+            <p>Details about West Coast Swing will go here.</p>
+        </div>
+        <!-- Lindy Hop Content -->
+        <div class="tab-pane fade" id="lindy-hop" role="tabpanel" aria-labelledby="lindy-hop-tab">
+            <h3>Lindy Hop</h3>
+            <ul class="nav nav-tabs" id="lindyHopTabs" role="tablist">
+                <!-- Choreographies -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="choreographies-tab" data-bs-toggle="tab" data-bs-target="#choreographies" type="button" role="tab" aria-controls="choreographies" aria-selected="true">
+                        Choreographies
+                    </button>
+                </li>
+                <!-- Social Dance -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="social-dance-tab" data-bs-toggle="tab" data-bs-target="#social-dance" type="button" role="tab" aria-controls="social-dance" aria-selected="false">
+                        Social Dance
+                    </button>
+                </li>
+                <!-- More -->
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="more-tab" data-bs-toggle="tab" data-bs-target="#more" type="button" role="tab" aria-controls="more" aria-selected="false">
+                        More
+                    </button>
+                </li>
+            </ul>
+            <div class="tab-content" id="lindyHopTabsContent">
+                <div class="tab-pane fade show active" id="choreographies" role="tabpanel" aria-labelledby="choreographies-tab">
+                    <h4>Choreographies</h4>
+                    <p>Details about choreographies will go here.</p>
+                </div>
+                <div class="tab-pane fade" id="social-dance" role="tabpanel" aria-labelledby="social-dance-tab">
+                    <h4>Social Dance</h4>
+                    <p>Details about social dance will go here.</p>
+                </div>
+                <div class="tab-pane fade" id="more" role="tabpanel" aria-labelledby="more-tab">
+                    <h4>More</h4>
+                    <p>Additional details will go here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+
+        <!-- Tutoring and Mentoring Section -->
+<section id="mentoring" class="container py-5">
+    <h2>Tutoring and Mentoring</h2>
+    <p>These are some topics where I can provide guidance, mentorship, and teach classes:</p>
+    <ul>
+        <li><strong>Start learning Lindy Hop:</strong> Dance techniques and the fascinating history behind this dance style.</li>
+        <li><strong>How to apply for US and Canadian Universities:</strong> Tips and strategies for applications, essays, and navigating the process.</li>
+        <li><strong>How to be an international student in the US and Ivy League Schools:</strong> Insights into adapting to a new culture and excelling academically.</li>
+        <li><strong>Learn how to speak English:</strong> TKT-certified instruction for learners at all levels.</li>
+        <li><strong>Learn how to speak Spanish:</strong> As a native speaker, I offer engaging lessons for learners of all levels.</li>
+    </ul>
+</section>
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="text-center py-5 bg-dark text-light">
