@@ -12,72 +12,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header class="text-center py-5 bg-dark text-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Paulina Bargallo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-dark text-center text-light py-5">
         <h1>Paulina Bargallo</h1>
         <p>Chemical and Biomolecular Engineering | Lindy Hop Dancer | Tissue Engineering Enthusiast</p>
-        <nav>
-            <a href="#about" class="btn btn-outline-light m-2">About</a>
-            <a href="#skills" class="btn btn-outline-light m-2">Skills</a>
-            <a href="#projects" class="btn btn-outline-light m-2">Projects</a>
-            <a href="#experience" class="btn btn-outline-light m-2">Experience</a>
-            <a href="#contact" class="btn btn-outline-light m-2">Contact</a>
-        </nav>
     </header>
 
     <!-- About Section -->
     <section id="about" class="container py-5">
         <h2>About Me</h2>
         <p>
-            I am a senior at the University of Pennsylvania majoring in Chemical and Biomolecular Engineering. My interests include tissue engineering, 3D bioprinting, and molecular biology. Outside academics, I enjoy Lindy Hop dancing and choreographing for shows.
+            I am a senior at the University of Pennsylvania, majoring in Chemical and Biomolecular Engineering. My interests include tissue engineering, 3D bioprinting, and molecular biology. Outside academics, I enjoy Lindy Hop dancing and choreographing for shows.
         </p>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="bg-light py-5">
-        <div class="container">
-            <h2>Skills</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <ul>
-                        <li><i class="fas fa-code"></i> Python</li>
-                        <li><i class="fas fa-code"></i> MATLAB</li>
-                        <li><i class="fas fa-vial"></i> PCR</li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <ul>
-                        <li><i class="fas fa-tools"></i> 3D Printing</li>
-                        <li><i class="fas fa-flask"></i> Gel Electrophoresis</li>
-                        <li><i class="fas fa-laptop-code"></i> ImageJ</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Projects Section -->
-    <section id="projects" class="container py-5">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>CBE 3300B Projects:</strong> Collaborated with Kayla Powell and Theertha on advanced chemical engineering projects.</li>
-            <li><strong>Senior Design Project:</strong> Developing innovative solutions with Alan Han and Liang Dong.</li>
-        </ul>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience" class="bg-light py-5">
+    <section id="projects" class="bg-light py-5">
         <div class="container">
-            <h2>Experience</h2>
+            <h2>Projects</h2>
             <ul>
-                <li><strong>Hast Lab:</strong> Scaffold development for critical defect repairs.</li>
-                <li><strong>Lim Lab:</strong> Gene regulation studies in Drosophila Melanogaster.</li>
+                <li><strong>CBE 3300B Projects:</strong> Collaborated with Kayla Powell and Theertha on advanced chemical engineering projects.</li>
+                <li><strong>Senior Design Project:</strong> Developing innovative solutions with Alan Han and Liang Dong.</li>
             </ul>
         </div>
     </section>
 
+    <!-- Experience Section -->
+    <section id="experience" class="container py-5">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Hast Lab:</strong> Scaffold development for critical defect repairs.</li>
+            <li><strong>Lim Lab:</strong> Gene regulation studies in Drosophila Melanogaster.</li>
+        </ul>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact" class="text-center py-5 bg-dark text-light">
+    <section id="contact" class="bg-dark text-light py-5 text-center">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:bpaulina@seas.upenn.edu" class="text-light">bpaulina@seas.upenn.edu</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/paulina-bargallo-gonzalez-lugo-3b8740252/" class="text-light">Paulina Bargallo</a></p>
@@ -85,7 +73,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="text-center py-3 bg-dark text-light">
+    <footer class="text-center bg-dark text-light py-3">
         <p>&copy; 2025 Paulina Bargallo | Made with ❤️</p>
     </footer>
 </body>
