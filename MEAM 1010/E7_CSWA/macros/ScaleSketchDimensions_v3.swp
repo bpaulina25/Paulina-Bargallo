@@ -1,0 +1,46 @@
+
+Dim swApp As Object
+Dim swModel As ModelDoc2
+Dim swSketch As Sketch
+Dim swSketchDim As Dimension
+Dim swFeature As Feature
+
+Sub main()
+    Set swApp = Application.SldWorks
+    Set swModel = swApp.ActiveDoc
+
+    If swModel Is Nothing Then
+        MsgBox "No active document"
+        Exit Sub
+    End If
+
+    Set swFeature = swModel.FirstFeature
+
+    While Not swFeature Is Nothing
+        If swFeature.GetTypeName2 = "Sketch" Then
+            swFeature.Select2 False, 0
+            swModel.EditSketch
+
+            Dim sketchDims As Variant
+            sketchDims = swModel.GetDimensions
+
+            If Not IsEmpty(sketchDims) Then
+                Dim i As Integer
+                For i = 0 To UBound(sketchDims)
+                    Set swSketchDim = sketchDims(i)
+                    If Not swSketchDim Is Nothing Then
+                        Dim oldVal As Double
+                        oldVal = swSketchDim.SystemValue
+                        swSketchDim.SystemValue = oldVal / 25.4
+                    End If
+                Next i
+            End If
+
+            swModel.SketchManager.InsertSketch True ' Exit sketch
+        End If
+
+        Set swFeature = swFeature.GetNextFeature
+    Wend
+
+    MsgBox "Sketch dimensions scaled by 1/25.4 successfully."
+End Sub

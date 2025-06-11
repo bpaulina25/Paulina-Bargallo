@@ -1,0 +1,43 @@
+Dim swApp As Object
+Dim swModel As ModelDoc2
+Dim swSketchMgr As SketchManager
+Dim swSketch As Sketch
+Dim swDim As DisplayDimension
+Dim swAnn As Annotation
+Dim i As Integer
+
+Sub main()
+    Set swApp = Application.SldWorks
+    Set swModel = swApp.ActiveDoc
+
+    If swModel Is Nothing Then
+        MsgBox "No active document"
+        Exit Sub
+    End If
+
+    Dim feat As Feature
+    Set feat = swModel.FirstFeature
+
+    While Not feat Is Nothing
+        If feat.GetTypeName2 = "Sketch" Then
+            swModel.EditSketch
+            Set swSketchMgr = swModel.SketchManager
+            Set swSketch = swSketchMgr.ActiveSketch
+
+            For i = 0 To swModel.GetDisplayDimensionCount - 1
+                Set swDim = swModel.GetDisplayDimension(i)
+                If Not swDim Is Nothing Then
+                    Dim oldVal As Double
+                    oldVal = swDim.GetDimension2(0).SystemValue
+                    ' Divide by 25.4 to maintain the same number when units are switched
+                    swDim.GetDimension2(0).SystemValue = oldVal / 25.4
+                End If
+            Next i
+
+            swModel.SketchManager.InsertSketch True ' Exit sketch
+        End If
+        Set feat = feat.GetNextFeature
+    Wend
+
+    MsgBox "All sketch dimensions scaled by 1/25.4"
+End Sub
