@@ -16,7 +16,7 @@
     <header class="text-center py-5 bg-dark text-light">
         <img src="images/profile_picture_git.JPG" alt="Paulina Bargallo" class="rounded-circle mb-3" style="width: 150px; height: 150px; object-fit: cover;">
         <h1>Paulina Bargallo</h1>
-        <p>BSE in Chemical and Biomolecular Engineering (Biotechnology & Pharmaceutics) | Lindy Hop Dancer | Tissue Engineering Enthusiast</p>
+        <p>Chemical and Biomolecular Engineer | Lindy Hop Dancer | Tissue Engineering Enthusiast</p>
         <nav>
             <a href="#about" class="btn btn-outline-light m-2">About</a>
             <a href="#skills" class="btn btn-outline-light m-2">Skills</a>
@@ -74,11 +74,21 @@
                 <button class="nav-link" id="senior-project-tab" data-bs-toggle="tab" data-bs-target="#senior-project" type="button" role="tab">Senior Project Design</button>
             </li>
         </ul>
-        <div class="tab-content" id="projectTabsContent">
-            <div class="tab-pane fade show active" id="meam101" role="tabpanel">
-                <h3>MEAM 101 Projects</h3>
-                <p>Details about MEAM 101 projects will go here.</p>
-            </div>
+       <div class="tab-pane fade show active" id="meam101" role="tabpanel">
+    <h3>MEAM 101 – Introduction to Mechanical Design</h3>
+
+    <div class="mb-4">
+        <h4>SolidWorks Certification</h4>
+        <iframe src="DOCS/MEAM1010/SolidWorks_Certificate.pdf" width="100%" height="500px" style="border:1px solid #ccc;"></iframe>
+        <a href="DOCS/MEAM1010/SolidWorks_Certificate.pdf" target="_blank">Download Certificate</a>
+    </div>
+
+    <div>
+        <h4>Assignments</h4>
+        <p>Explore individual assignments and downloadable parts:</p>
+        <a href="meam1010.html" class="btn btn-outline-primary">View All MEAM 101 Assignments</a>
+    </div>
+</div>
             <div class="tab-pane fade" id="senior-project" role="tabpanel">
                 <h3>Senior Project Design</h3>
                 <p>Details about Senior Project Design will go here.</p>
@@ -90,22 +100,45 @@
 <section id="research" class="container py-5">
     <h2>Research</h2>
 
-    <div class="mb-4">
+    <!-- Bomyi Lim Lab -->
+    <div class="mb-5">
         <h3>Independent Study – Bomyi Lim Lab</h3>
         <p>
             During my independent study in Dr. Bomyi Lim’s Lab at the University of Pennsylvania, I investigated the dynamics of molecular crowding and phase separation in protein-RNA systems, with implications for understanding membraneless organelles. I contributed to the experimental design, execution, and analysis of microscopy and spectrophotometric assays to quantify droplet behavior and protein interactions. This research honed my skills in fluorescence microscopy, image analysis, and biophysical characterization methods, and deepened my interest in the intersection of chemical engineering and molecular biology.
         </p>
-        <a href="DOCS/Research/BOMYI/presentation.mp4" class="btn btn-primary" target="_blank">Watch My Research Presentation</a>
+        <div class="ratio ratio-16x9 mb-2">
+            <video controls>
+                <source src="DOCS/Research/BOMYI/presentation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <a href="DOCS/Research/BOMYI/presentation.mp4" target="_blank">Download Research Presentation (MP4)</a>
     </div>
 
+    <!-- HAST Lab -->
     <div>
         <h3>HAST Lab – McKay Orthopaedic Research Laboratory</h3>
         <p>
             I conducted research in the HAST Lab at the McKay Orthopaedic Research Laboratory under Dr. Michael Hast (currently at the University of Delaware), focusing on bone tissue engineering for critical-sized defect repairs. Our work involved the development and evaluation of 3D-printed polycaprolactone (PCL) scaffolds—known as “Bonuts”—with triply periodic minimal surface architectures designed to improve osteointegration. I co-authored studies that explored the effects of zinc release from GelMA hydrogels on gene expression, metabolic activity, and mechanical properties in vitro. This experience strengthened my technical expertise in scaffold fabrication, hydrogel synthesis, mechanical testing, and confocal imaging, as well as my scientific writing and collaboration skills.
         </p>
-        <a href="DOCS/Research/HAST/ORS Poster_GelMA_final (1).pptx" class="btn btn-outline-secondary" target="_blank">ORS Poster – GelMA</a>
-        <a href="DOCS/Research/HAST/Temporal Zinc Release from Hydrogels- Effects on Mechanics, Metabolic Activity, and Gene Expression.pdf" class="btn btn-outline-secondary" target="_blank">Temporal Zinc Release Paper</a>
-        <a href="DOCS/Research/HAST/Triply Periodic Minimal Surface Architectures Improve In Vitro Bone Growth in PCL Scaffolds.pdf" class="btn btn-outline-secondary" target="_blank">TPMS Scaffolds Paper</a>
+
+        <div class="mb-4">
+            <h5>ORS Poster – GelMA</h5>
+            <iframe src="DOCS/Research/HAST/ORS_Poster_GelMA_final.pdf" width="100%" height="500px" style="border:1px solid #ccc;"></iframe>
+            <a href="DOCS/Research/HAST/ORS_Poster_GelMA_final.pdf" target="_blank">Download PDF</a>
+        </div>
+
+        <div class="mb-4">
+            <h5>Temporal Zinc Release Paper</h5>
+            <iframe src="DOCS/Research/HAST/Temporal Zinc Release from Hydrogels- Effects on Mechanics, Metabolic Activity, and Gene Expression.pdf" width="100%" height="500px" style="border:1px solid #ccc;"></iframe>
+            <a href="DOCS/Research/HAST/Temporal Zinc Release from Hydrogels- Effects on Mechanics, Metabolic Activity, and Gene Expression.pdf" target="_blank">Download PDF</a>
+        </div>
+
+        <div class="mb-4">
+            <h5>TPMS Scaffolds Paper</h5>
+            <iframe src="DOCS/Research/HAST/Triply Periodic Minimal Surface Architectures Improve In Vitro Bone Growth in PCL Scaffolds.pdf" width="100%" height="500px" style="border:1px solid #ccc;"></iframe>
+            <a href="DOCS/Research/HAST/Triply Periodic Minimal Surface Architectures Improve In Vitro Bone Growth in PCL Scaffolds.pdf" target="_blank">Download PDF</a>
+        </div>
     </div>
 </section>
 
